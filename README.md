@@ -10,12 +10,19 @@
 
 <p align="center">
 <a href='https://play.google.com/store/apps/details?id=io.github.sds100.keymapper&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height='75px'/></a>
-<a href="https://f-droid.org/packages/io.github.sds100.keymapper/" rel="nofollow"><img alt="Get it on F-Droid" height="75" src="https://user-images.githubusercontent.com/53379023/142497343-0e635fc5-056b-46ff-8d8e-d607ed95527e.png" data-canonical-src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" style="max-width: 100%;"></a>
+<a href="https://f-droid.org/packages/io.github.sds100.keymapper/" rel="nofollow"><img alt="Get it on F-Droid" height="75" src="https://user-images.githubusercontent.com/53379023/142497343-0e635fc5-056b-46ff-8d8e-d607ed95527e.png" data-canonical-src="" style="max-width: 100%;"></a>
   </br>
-<a href='https://ko-fi.com/M4M41032E' target='_blank'><img height='30' style='border:0px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-<noscript><a href="https://liberapay.com/sds100/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+<a href='https://ko-fi.com/M4M41032E' target='_blank'><img height='30' style='border:0px;' src='' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<noscript><a href="https://liberapay.com/sds100/donate"><img alt="Donate using Liberapay" src=""></a></noscript>
 <noscript><a href="https://buy.stripe.com/00g16L9YEabldDWdQQ"><img alt="Donate using Stripe" src="https://img.shields.io/badge/Donate-Stripe-blueviolet?style=for-the-badge&logo=stripe"></a></noscript>
 </p>
+
+## This is a fork of the Keymapper project
+What's new in my version? Basically, I've added support to start expert mode (with Shizuku) via intent. This means you can now automate stopping and starting the expert mode service with something like MacroDroid in a systematic way. Useful if you want to have full control of turning off Shizuku / USB Debugging and starting it, alongside starting Keymapper, as it relies on Shizuku (if you're using this setup). Why might you want to stop Shizuku / USB Debugging? Well, certain apps don't like it if they detect USB Debugging is enabled, hence why you'll need to stop it. Some phones allow you to run Shizuku with just Wireless Debugging, therefore you could turn off USB Debugging to make certain apps (e.g. banking apps) work, while able to use Shizuku related apps at the same time. However, this setup can cause some weird behaviours with certain Shizuku apps (like Keymapper), hence why if you have full control of ever aspect (Shizuku start/stop, USB Debugging on/off and Keymapper expert mode on/off), you'll be able to manage everything much better and easier.
+
+## Download link:
+https://github.com/chaoscreater/KeyMapper/blob/develop/keymapper-4.0.5-foss-debug.apk
+
 
 ## Unleash your keys!
 
