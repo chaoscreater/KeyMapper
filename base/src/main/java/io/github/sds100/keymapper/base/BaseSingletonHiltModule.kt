@@ -4,6 +4,8 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import io.github.sds100.keymapper.base.expertmode.SystemBridgeSetupUseCase
+import io.github.sds100.keymapper.base.expertmode.SystemBridgeSetupUseCaseImpl
 import io.github.sds100.keymapper.base.actions.GetActionErrorUseCase
 import io.github.sds100.keymapper.base.actions.GetActionErrorUseCaseImpl
 import io.github.sds100.keymapper.base.actions.sound.SoundsManager
@@ -208,4 +210,10 @@ abstract class BaseSingletonHiltModule {
     @Binds
     @Singleton
     abstract fun bindClock(impl: ClockImpl): Clock
+
+    @Binds
+    @Singleton
+    abstract fun bindExpertModeSetupUseCase(
+        impl: SystemBridgeSetupUseCaseImpl,
+    ): SystemBridgeSetupUseCase
 }

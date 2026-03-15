@@ -50,6 +50,13 @@
                 <!-- Set as default so the Assistant Trigger app isn't opened by default. -->
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <intent-filter>
+                <!-- Required so StartExpertModeSetupBroadcastReceiver can launch this
+                     activity. The action uses the base module namespace as the prefix
+                     because LIBRARY_PACKAGE_NAME = "io.github.sds100.keymapper.base". -->
+                <action android:name="io.github.sds100.keymapper.base.ACTION_START_SYSTEM_BRIDGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <service

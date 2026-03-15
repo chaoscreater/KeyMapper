@@ -27,8 +27,6 @@ import io.github.sds100.keymapper.base.constraints.CreateConstraintUseCaseImpl
 import io.github.sds100.keymapper.base.constraints.DisplayConstraintUseCase
 import io.github.sds100.keymapper.base.expertmode.ExpertModeSetupDelegateImpl
 import io.github.sds100.keymapper.base.expertmode.SystemBridgeSetupDelegate
-import io.github.sds100.keymapper.base.expertmode.SystemBridgeSetupUseCase
-import io.github.sds100.keymapper.base.expertmode.SystemBridgeSetupUseCaseImpl
 import io.github.sds100.keymapper.base.home.ListKeyMapsUseCase
 import io.github.sds100.keymapper.base.home.ListKeyMapsUseCaseImpl
 import io.github.sds100.keymapper.base.home.ShowHomeScreenAlertsUseCase
@@ -150,12 +148,6 @@ abstract class BaseViewModelHiltModule {
     abstract fun bindCreateConstraintUseCase(
         impl: CreateConstraintUseCaseImpl,
     ): CreateConstraintUseCase
-
-    @Binds
-    @ViewModelScoped
-    abstract fun bindExpertModeSetupUseCase(
-        impl: SystemBridgeSetupUseCaseImpl,
-    ): SystemBridgeSetupUseCase
 
     @Binds
     @ViewModelScoped

@@ -13,4 +13,13 @@ object Api {
     const val ACTION_ENABLE_KEY_MAP = "io.github.sds100.keymapper.ACTION_ENABLE_KEY_MAP"
     const val ACTION_DISABLE_KEY_MAP = "io.github.sds100.keymapper.ACTION_DISABLE_KEY_MAP"
     const val ACTION_TOGGLE_KEY_MAP = "io.github.sds100.keymapper.ACTION_TOGGLE_KEY_MAP"
+
+    const val ACTION_START_EXPERT_MODE_SETUP =
+        "io.github.sds100.keymapper.ACTION_START_EXPERT_MODE_SETUP"
+
+    const val ACTION_STOP_EXPERT_MODE =
+        "io.github.sds100.keymapper.ACTION_STOP_EXPERT_MODE"
+
+    const val ACTION_START_EXPERT_MODE_WITH_SHIZUKU =
+        "io.github.sds100.keymapper.ACTION_START_EXPERT_MODE_WITH_SHIZUKU"
 }

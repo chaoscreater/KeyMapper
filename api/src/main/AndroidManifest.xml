@@ -46,6 +46,30 @@
             </intent-filter>
         </receiver>
 
+        <receiver
+            android:name=".StartExpertModeSetupBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.github.sds100.keymapper.ACTION_START_EXPERT_MODE_SETUP" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".StopExpertModeBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.github.sds100.keymapper.ACTION_STOP_EXPERT_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".StartExpertModeWithShizukuBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.github.sds100.keymapper.ACTION_START_EXPERT_MODE_WITH_SHIZUKU" />
+            </intent-filter>
+        </receiver>
+
         <!-- Don't require a permission because we want other apps to bind
          to this service. The permission wouldn't be signature-level so
          if a nefarious app wants to talk to Key Mapper they could add the permission anyway. -->

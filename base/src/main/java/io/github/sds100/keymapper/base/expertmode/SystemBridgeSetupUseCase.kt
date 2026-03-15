@@ -3,7 +3,7 @@ package io.github.sds100.keymapper.base.expertmode
 import android.os.Build
 import android.os.Process
 import androidx.annotation.RequiresApi
-import dagger.hilt.android.scopes.ViewModelScoped
+import javax.inject.Singleton
 import io.github.sds100.keymapper.common.utils.Clock
 import io.github.sds100.keymapper.common.utils.KMResult
 import io.github.sds100.keymapper.common.utils.firstBlocking
@@ -32,7 +32,7 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 
 @OptIn(ExperimentalCoroutinesApi::class)
-@ViewModelScoped
+@Singleton
 class SystemBridgeSetupUseCaseImpl @Inject constructor(
     private val preferences: PreferenceRepository,
     private val suAdapter: SuAdapter,
